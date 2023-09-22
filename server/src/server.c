@@ -122,7 +122,7 @@ int get_connection(int sockfd) {
   return new_fd;
 }
 
-void *game_process(struct chess *chess, int player) {
+int game_process(struct chess *chess, int player) {
   struct move_log *log = NULL;
   uint8_t valid_moves[BOARD_SIZE][BOARD_SIZE] = {{0}};
   int status = 0;

@@ -7,6 +7,6 @@
 #include "move.h"
 #include "server.h"
 
-void *game_process(struct chess *chess, int sockfd);
+int game_process(struct chess *chess, int sockfd);
 
 #endif

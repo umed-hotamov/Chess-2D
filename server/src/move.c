@@ -118,7 +118,7 @@ int handle_move(struct chess *chess, uint8_t (*valid_moves)[BOARD_SIZE],
       return CHECKMATE;
     }
 
-    return 0;
+    return CHECK;
   }
 
   return 0;
